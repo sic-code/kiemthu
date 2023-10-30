@@ -1,0 +1,150 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+}
+
+.container-fluid {
+  display: flex;
+  padding: 0;
+
+  & nav {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #19283e;
+    width: 280px;
+    overflow: hidden;
+    height: 100vh;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    & ul {
+      padding: 0;
+    }
+
+    .logo {
+      text-align: center;
+      display: flex;
+      margin: 10px 0 0 10px;
+    }
+
+    .logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+
+    .logo span {
+      font-weight: bold;
+      padding-left: 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    & a {
+      position: relative;
+      color: rgb(233, 233, 233);
+      display: table;
+      width: 100%;
+      padding: 10px 0;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .fas {
+      position: relative;
+      width: 60px;
+      height: 40px;
+      top: 12px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .nav-item {
+      position: relative;
+      top: 10px;
+      font-size: 14px;
+    }
+
+    & a:hover {
+      background: #091628;
+    }
+
+    .logout {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .drop-list {
+      display: none;
+      transition: 2s;
+
+      .drop-item {
+        font-size: 13px;
+        padding-left: 65px;
+      }
+    }
+
+    .drop-menu a {
+
+      & span,
+      i {
+        color: #fff;
+      }
+    }
+
+    .dropmenu:hover .drop-list {
+      display: block;
+    }
+  }
+}
+/* Main Section */
+main {
+  width: 100%;
+
+  .main-top {
+    padding: 10px 20px;
+    background: #fff;
+    color: #000(233, 233, 233);
+  }
+
+  .main-content {
+    position: relative;
+    padding: 20px;
+
+    .form-container {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 4px 1px #00000026;
+    }
+    .btn{
+      width: 200px;
+      line-height: 35px;
+      background: #253b5c;
+      color: #fff;
+    }
+    .btn:hover{
+      background: #091628;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    .status-form p {
+      margin:0;
+      color: red;
+    }
+  }
+}
